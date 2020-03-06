@@ -240,7 +240,7 @@ class Home extends Component<HomeProps, HomeState> {
       loading,
       trendLoading
     } = this.state
-    console.log(rumorList);
+    console.log(rumorList)
     const tabs = [{ title: '疫情地图' }, { title: '最新消息' }, { title: '辟谣信息' }, { title: '疫情趋势' }]
     const columns = [
       { title: '地区', dataIndex: 'name', key: 'name' },
@@ -267,7 +267,7 @@ class Home extends Component<HomeProps, HomeState> {
     return (
       <Skeleton loading={loading} active paragraph={{ rows: 50 }}>
         <div>
-          <div className={styles.top}></div>
+          <img className={styles.top} src={process.env.PUBLIC_URL + '/img/fight-ncov.jpg'} />
           <Tabs
             tabs={tabs}
             initialPage={0}

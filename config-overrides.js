@@ -1,4 +1,4 @@
-const { override, fixBabelImports } = require('customize-cra')
+const { override, fixBabelImports, setWebpackPublicPath } = require('customize-cra')
 // 安装compression-webpack-plugin 压缩js为gzip
 const CompressionWebpackPlugin = require('compression-webpack-plugin')
 // 打包配置
